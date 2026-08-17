@@ -1,0 +1,1191 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    width:100%;
+    background:#eaeded;
+}
+
+/* ================= NAVBAR ================= */
+
+.first{
+    width:100%;
+    height:80px;
+    background:#131921;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    padding:0 20px;
+    color:white;
+}
+
+/* Hover Border */
+
+.border{
+    border:1px solid transparent;
+    padding:10px;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+.border:hover{
+    border:1px solid white;
+}
+
+/* ================= LOGO ================= */
+
+.logo img{
+    width:150px;
+    height:auto;
+    object-fit:contain;
+}
+
+/* ================= LOCATION ================= */
+
+.map{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.map i{
+    font-size:24px;
+    color:white;
+}
+
+.small{
+    display:block;
+    font-size:14px;
+    color:#cccccc;
+}
+
+.big{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+}
+
+/* ================= SEARCH ================= */
+
+.input{
+    width:700px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+.search-select{
+    width:70px;
+    height:100%;
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    font-size:16px;
+}
+
+.input input{
+    flex:1;
+    height:100%;
+    border:none;
+    outline:none;
+    padding-left:15px;
+    font-size:18px;
+}
+
+.search-icon{
+    width:60px;
+    height:100%;
+    background:#febd69;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* ================= LANGUAGE ================= */
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.right img{
+    width:40px;
+    height:28px;
+}
+
+.right span{
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+}
+
+/* ================= SIGN IN ================= */
+
+.sign{
+    display:flex;
+    flex-direction:column;
+}
+
+.sign span:first-child{
+    font-size:14px;
+}
+
+.ac{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+/* ================= RETURNS ================= */
+
+.returns{
+    display:flex;
+    flex-direction:column;
+}
+
+.returns span:first-child{
+    font-size:14px;
+}
+
+.returns span:last-child{
+    font-size:17px;
+    font-weight:bold;
+}
+
+/* ================= CART ================= */
+
+.cart{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.cart i{
+    font-size:38px;
+    color:white;
+}
+
+.cart span{
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+}
+
+/* ================= ICONS ================= */
+
+i{
+    color:white;
+}
+
+
+/* =========================
+   SECOND NAVBAR
+========================= */
+
+.second{
+    width:100%;
+    height:60px;
+    background:#2c333c;
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.second-1{
+    flex:0.05;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.second-1 div{
+    display:flex;
+    align-items:center;
+    padding:10px 10px;
+    border:1px solid transparent;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.second-2{
+    flex:0.72;
+    
+}
+
+.second-2 ul{
+    display:flex;
+    list-style:none;
+    align-items:center;
+}
+
+.second-2 li{
+    padding:8px 30px;
+    border:1px solid transparent;
+    cursor:pointer;
+     font-size: 20px;
+    font-style: bold;
+}
+
+.second-3{
+    flex:0.20;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:20px;
+     font-size: 20px;
+    font-style: bold;
+}
+
+.second-3 span{
+    padding:8px 10px;
+    border:1px solid transparent;
+    cursor:pointer;
+}
+
+.second i{
+    color:white;
+    margin-right:20%;
+    padding: 1%;
+}
+
+.second-1 div:hover,
+.second-2 li:hover,
+.second-3 span:hover{
+    border:1px solid white;
+}
+
+
+
+/* =========================
+   HERO SLIDER
+========================= */
+
+.hero {
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Slider window */
+
+.slider {
+    width: 100%;
+    height: 430px;
+    
+
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* Four images */
+
+.image-box {
+    width: 400%;
+
+    height: 150%;
+
+    display: flex;
+
+    position: absolute;
+
+    left: 0;
+    top:2px;
+
+    animation: carousel 20s infinite;
+}
+
+
+/* Each slide */
+
+.slide {
+    width: 25%;
+    height: 100%;
+
+    flex-shrink: 0;
+}
+
+
+/* Images */
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   SLIDER ANIMATION
+========================= */
+
+@keyframes carousel {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
+        transform: translateX(-25%);
+    }
+
+    50%,
+    70% {
+        transform: translateX(-50%);
+    }
+
+    75%,
+    95% {
+        transform: translateX(-75%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-container {
+    width: 100%;
+
+    padding: 0 20px 40px;
+
+    margin-top: -20px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* =========================
+   INDIA MESSAGE
+========================= */
+
+.india-message {
+    width: 100%;
+
+    min-height: 45px;
+
+    background: #f3f3f3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 10px;
+
+    font-size: 20px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.india-message a {
+    color: #007185;
+
+    margin-left: 5px;
+
+    text-decoration: none;
+}
+
+.india-message a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+
+
+
+.products-section {
+
+    width: 100%;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #eaeded 100px
+    );
+
+    position: relative;
+}
+
+
+/* =========================================
+   AMAZON INDIA MESSAGE
+========================================= */
+
+/* AMAZON INDIA MESSAGE */
+
+.para {
+    width: 100%;
+    height: 35px;
+    background-color: #f3f3f3;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: -40px;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Move ONLY the text upward */
+.para p {
+    position: relative;
+    top: -50px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transform: translate(5px, -50px);
+}
+
+.para a {
+    color: #007185;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.para a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   PRODUCT BOXES
+========================================= */
+
+.product-comp {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   EACH BOX
+========================================= */
+
+.product-comp .box {
+
+    width: calc(35% - 25px);
+
+    height: 400px;
+
+    background-color: white;
+
+    padding: 20px;
+
+    position: relative;
+}
+
+
+/* =========================================
+   BOX HEADING
+========================================= */
+
+.box h3 {
+
+    font-size: 20px;
+
+    color: #222;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.box-a {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 10px;
+}
+
+
+/* =========================================
+   PRODUCT
+========================================= */
+
+.product {
+
+    text-align: center;
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.product img {
+
+    width: 100%;
+
+    height: 105px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: auto;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PRODUCT NAME
+========================================= */
+
+.product span {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #222;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   SEE MORE
+========================================= */
+
+.see-more {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: #007185;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+.see-more:hover {
+
+    color: #c45500;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 1000px) {
+
+    .product-comp {
+
+        flex-wrap: wrap;
+    }
+
+    .product-comp .box {
+
+        width: calc(50% - 10px);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .product-comp .box {
+
+        width: 100%;
+    }
+
+    .slider,
+    .image-box,
+    .slide,
+    .slide img {
+
+        height: 300px;
+    }
+}
+/* =========================================
+   BOX 4
+========================================= */
+
+/* BOX 4 */
+.box-b {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* SIGN IN BOX */
+.best {
+    width: 315px;
+    height: 130px;
+    background-color: white;
+
+    padding: 15px;
+}
+
+
+/* Heading */
+.best h3 {
+    font-size: 21px;
+    line-height: 22px;
+
+    margin: 0 0 15px 0;
+
+    color: #222;
+}
+
+
+/* Button */
+.best button {
+    width: 200px;
+    height: 30px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #febd69;
+
+    color: #222;
+
+    cursor: pointer;
+
+    box-shadow: 1px 2px 5px rgb(211, 207, 207);
+}
+
+
+/* IMAGE BELOW SIGN-IN BOX */
+.below-image {
+    width: 315px;
+    height: 235px;
+
+    overflow: hidden;
+}
+
+
+/* Image */
+.below-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+/* =========================================
+   SECTION 2
+========================================= */
+
+.sec-2 {
+    width: 100%;
+    height: 315px;
+
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SLIDER CONTAINER
+========================================= */
+
+.slide-sec {
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.slide-sec h3 {
+    font-size: 20px;
+
+    color: #222;
+
+    margin: 0 0 10px 0;
+}
+
+
+/* =========================================
+   PRODUCT LIST
+========================================= */
+
+.product-slide {
+    width: 100%;
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    padding: 5px 0 15px 0;
+
+    margin: 0;
+}
+
+
+/* Hide scrollbar */
+
+.product-slide::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-slide::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+.product-slide::-webkit-scrollbar-thumb {
+    background: #aaa;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   EACH PRODUCT
+========================================= */
+
+.product-slide li {
+    min-width: 150px;
+
+    height: 180px;
+
+    list-style: none;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.product-slide li img {
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   LEFT BUTTON
+========================================= */
+
+.l-btn,
+.r-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+
+    height: 90px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    z-index: 10;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+
+
+/* LEFT */
+
+.l-btn {
+    left: 0;
+
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* RIGHT */
+
+.r-btn {
+    right: 0;
+
+    border-radius: 5px 0 0 5px;
+}
+
+
+/* =========================================
+   BUTTON ICON
+========================================= */
+
+.l-btn i,
+.r-btn i {
+
+    color: #333;
+
+    font-size: 28px;
+}
+
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.l-btn:hover,
+.r-btn:hover {
+
+    border: 2px solid #007185;
+
+    background-color: #f7f7f7;
+}
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+    width: 100%;
+    background-color: #131a22;
+}
+
+
+/* ============================= */
+/* BACK TO TOP */
+/* ============================= */
+
+.backtop {
+    text-align: center;
+    height: 50px;
+    background-color: #37475a;
+    padding: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.backtop span {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.backtop:hover {
+    background-color: #485769;
+}
+
+
+/* ============================= */
+/* FOOTER DETAILS */
+/* ============================= */
+
+.detail {
+    background-color: #232f3e;
+    min-height: 350px;
+}
+
+
+/* ============================= */
+/* FOUR COLUMNS */
+/* ============================= */
+
+.table {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+.table > div {
+    width: 230px;
+}
+
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+.t-head {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* ============================= */
+/* LIST */
+/* ============================= */
+
+.table ul {
+    padding: 0;
+    margin: 0;
+}
+
+.table li {
+    color: #dddddd;
+    padding-top: 10px;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.table li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* ============================= */
+/* COPYRIGHT */
+/* ============================= */
+
+.copy {
+    background-color: #131a22;
+    height: 90px;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.copy span {
+    color: white;
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* LINE */
+/* ============================= */
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #3a4553;
+}
+/* Sidebar */
+
+.sidebar{
+    width:300px;
+    height:100vh;
+    background:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    overflow-y:auto;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.4);
+    z-index:101;
+}
+
+/* Header */
+
+.hdn-head{
+    background:#131921;
+    color:#fff;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hdn-head h2{
+    font-size:22px;
+}
+
+/* Content */
+
+.hdn-content h3{
+    padding:20px 25px 10px;
+    color:#111;
+}
+
+.hdn-content ul{
+    list-style:none;
+}
+
+.hdn-content ul li{
+    padding:12px 25px;
+    font-size:15px;
+    color:#444;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hdn-content ul li:hover{
+    background:#f3f3f3;
+}
+
+.line{
+    border-bottom:1px solid #ddd;
+    margin:10px 0;
+}
+
+/* Close Button */
+
+.close-btn{
+    position:fixed;
+    top:15px;
+    left:320px;
+    font-size:35px;
+    color:white;
+    cursor:pointer;
+    z-index:102;
+    transition:.3s;
+}
+
+.close-btn:hover{
+    color:#f3a847;
+}
+.fa-angle-right {
+    color: rgb(27, 27, 27);
+}
+
+.hdn-content ul div:hover {
+    background-color: rgb(230, 227, 227);
+}
+
+.hdn-content ul {
+    padding-bottom: 9px;
+}
+
+/* Overlay */
+.black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+}
+
+/* Active Overlay */
+.black.active {
+    width: 100%;
+    z-index: 100;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    transition: left 0.5s;
+    z-index: 101;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.fa-xmark {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 102;
+}
+
+.fa-xmark.active {
+    display: block;
+}
+
+
+
+
+
